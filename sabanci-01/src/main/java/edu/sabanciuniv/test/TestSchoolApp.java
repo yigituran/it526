@@ -14,21 +14,19 @@ public class TestSchoolApp {
 
     public static void main(String[] args) {
         if (isDataExists()) saveTestData();
-        CourseController courseController = new CourseController();
+        // CourseController courseController = new CourseController();
 
-        //customerController.saveCustomer(new Customer("Kemal Türk", "İzmir", 323123213L, "566834757734"));
+        // System.out.println("============= FIND ALL COURSES ===============");
+        // for (Course course : courseController.findAllCourses()) {
+        //     System.out.println(course);
+        // }
 
-        System.out.println("============= FIND ALL COURSES ===============");
-        for (Course course : courseController.findAllCourses()) {
-            System.out.println(course);
-        }
+        // System.out.println("============= FIND COURSE ===============");
+        // Course foundCourse = courseController.findCourse(5);
+        // System.out.println(foundCourse);
 
-        System.out.println("============= FIND COURSE ===============");
-        Course foundCourse = courseController.findCourse(5);
-        System.out.println(foundCourse);
-
-        System.out.println("============= DELETE COURSE ===============");
-        courseController.deleteCourse(foundCourse);
+        // System.out.println("============= DELETE COURSE ===============");
+        // courseController.deleteCourse(foundCourse);
     }
 
     private static boolean isDataExists() {
@@ -47,7 +45,7 @@ public class TestSchoolApp {
         Student student1 = new Student("Harry Potter", "July 31, 1980", "Godric's Hollow", "Male");
         Student student2 = new Student("Tom Riddle", "December 31, 1926", "Little Hangleton", "Male");
         Student student3 = new Student("Hermione Granger", "September 19, 1979", "Heathgate", "Female");
-        Student student4 = new Student("Ginny Weasley", "August 11, 1981", "Ottery St Catchpole", "Female")
+        Student student4 = new Student("Ginny Weasley", "August 11, 1981", "Ottery St Catchpole", "Female");
 
         course1.setInstructor(instructor1);
         course2.setInstructor(instructor1);
