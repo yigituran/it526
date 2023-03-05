@@ -26,6 +26,10 @@ public class Course {
         this.creditScore = creditScore;
     }
 
+    public Course() {
+
+    }
+
     public int getId() {
         return id;
     }

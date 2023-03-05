@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "studenttable")
+@Table(name = "students")
 public class Student {
 
     @Id
@@ -26,6 +26,10 @@ public class Student {
         this.birthdate = birthdate;
         this.address = address;
         this.gender = gender;
+    }
+
+    public Student() {
+
     }
 
     public int getId() {
@@ -110,6 +114,6 @@ public class Student {
                 + "]";
     }
 
-    
+
 
 }
